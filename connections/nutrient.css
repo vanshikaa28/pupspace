@@ -1,0 +1,71 @@
+.navbar-brand{
+    font-size:2rem;
+    font-weight: bold;
+ }
+ .nav-item{
+    padding: 0px 18px;
+ }
+ .nav-link{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+
+ .container-fluid{
+    padding: 1% 5% 1%; /* 3%- top and bottom , 14%- left and right*/
+ }
+ body{
+    background-color:  #ff4c68;
+ }
+ .bone{
+    width: 20%;
+    height:50%;
+    transform: rotate(10deg); /* rotating the image*/
+    position: absolute;
+    margin-top:10px;
+    border: 1%;
+    border-style: ridge;
+    border-color: black;
+    right: 5%; /*padding towards right*/
+ }
+ @media (max-width:1028px){
+    #title{
+       text-align: center ;
+    }
+    .bone{
+       position:static;
+       transform: rotate(0);
+    }
+ }
+ .heading{
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+ }
+ .photo{
+   width: 20%;
+   height:40%;
+   margin-left: 2.5%;
+   border: 1%;
+   border-style: ridge;
+   border-color: black;
+ }
+ .photo1{
+   width: 20%;
+   height:40%;
+   margin-left: 7%;
+   border: 1%;
+   border-style: ridge;
+   border-color: black;
+ }
+
+ .link{
+   color: black;
+ }
+ .text1{
+   margin-left: 2.5%;
+ }
+ #footer{
+   text-align: center;
+   padding: 8% 16%;
+}
