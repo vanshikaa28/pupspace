@@ -1,0 +1,100 @@
+.navbar-brand{
+    font-size:2rem;
+    font-weight: bold;
+ }
+ .nav-item{
+    padding: 0px 18px;
+ }
+ .nav-link{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+ .download-btn{
+    margin: 5% 3% 5% 0;
+ }
+ .container-fluid{
+    padding: 1% 5% 1%; /* 3%- top and bottom , 14%- left and right*/
+ }
+.container-fluid{
+    padding: 1% 5% 5%; /* 3%- top and bottom , 14%- left and right*/
+ }
+ #title{
+    background-color: #ff4c68;
+    font-family: 'Montserrat', sans-serif;
+ }
+ .dropdown-item{
+   color: black;
+ }
+ .links{
+   color: black;
+ }
+ #testimonials{
+
+    text-align: center;
+    background-color: #ff4c68;
+    
+}
+.eat_img{
+   width: 800px;
+   height: 300px;
+}
+.play_img{
+   width: 800px;
+   height: 300px;
+}
+.play1_img{
+   width: 800px;
+   height: 300px;
+}
+.training_img{
+   width: 800px;
+   height: 300px;
+}                                                      
+ #footer{
+    text-align: center;
+    padding: 8% 16%;
+    background-color: #ff4c68;
+ }
+ h2{
+   font-family: 'Comfortaa', cursive;
+   font-size: 3rem;
+   line-height: 1.5;
+   font-weight: bold;
+}
+.content{
+   color: white;
+}
+#features{
+   padding: 8% 16% ;
+   background-color: #fff;
+   position: relative;
+   z-index: 1; /*z-index*/
+}
+table{
+   width: 100%;
+   background-color: #ff4c68;
+}
+.timg{
+   height: 500px;
+    width: 609px;
+}
+#footer{
+   padding: 5%;
+   background-color: #EAEAEA;
+}
+
+.table1{
+   width: 100%;
+}
+
+.f1{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}
+
+.th1{
+   padding-left: 10%;
+}
+.b1{
+   text-align: center;
+}
