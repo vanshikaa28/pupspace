@@ -14,7 +14,7 @@
          <!--For External Css File-->
          <!--{% load static %} -->
  
-         <link rel="stylesheet" href="front.css">
+         <link rel="stylesheet" href="{{ url_for('static', filename='front.css') }}">
         
          <!--For attaching icons-->
         
@@ -39,23 +39,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#"><a class="links" href="meet.html">Meet Friends</a></a>
+                          <a class="nav-link" href="#"><a class="links" href="/meet.html">Meet Friends</a></a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            More:
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"><a class="links" href="training.html">Train your Dog</a></a>
-                            <a class="dropdown-item" href="#"><a class="links" href="nutrientdiet.html">Nutrient and Diet</a></a>
+                            <a class="dropdown-item" href="#"><a class="links" href="/training.html">Train your Dog</a></a>
+                            <a class="dropdown-item" href="#"><a class="links" href="/nutrientdiet.html">Nutrient and Diet</a></a>
                             <div class="dropdown-divider"></div>
                           </div>
                         </li>
                       </ul>
-                      <!--<form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>-->
                     </div>
                   </nav>
             </div>
@@ -84,31 +80,28 @@
             This site is packed with information on everything associated to dogs. From dog breeds 
             to dog lifestyle,training,food lifestyle!Here we can find dog friends near-by to home. PupSpace acts as your 
             one-stop resource for all information related to dogs.
-            <br>
-            <br>
-            <br>
-            <br>
+            <br><br><br><br>
           </div>
           <br>
             <div id="testimonials_slides" class="carousel slide" data-ride="false">
                 <div class="carousel-inner">
                   <div class="carousel-item container-fluid">
-                    <center><img class="play_img" src="static/blog/pexel1.jpeg" alt="eat-image"></center>
+                    <center><img class="play_img" src="{{ url_for('static', filename='pexel1.jpeg') }}" alt="eat-image"></center>
                    </div>
                    <div class="carousel-item container-fluid">
-                    <center><img class="play_img" src="static/blog/pexel3.jpeg" alt="eat-image"></center>
+                    <center><img class="play_img" src="{{ url_for('static', filename='pexel3.jpeg') }}" alt="eat-image"></center>
                    </div>
                   <div class="carousel-item active container-fluid">
-                    <center><img class="play_img" src="static/blog/play.jpg" alt="play-image"></center>
+                    <center><img class="play_img" src="{{ url_for('static', filename='play.jpg') }}" alt="play-image"></center>
                   </div>
                     <div class="carousel-item container-fluid">
-                        <center><img class="play_img" src="static/blog/eat.jpg" alt="eat-image"></center>
+                        <center><img class="play_img" src="{{ url_for('static', filename='eat.jpg') }}" alt="eat-image"></center>
                        </div>
                        <div class="carousel-item container-fluid">
-                        <center><img class="play_img" src="static/blog/training.jpg" alt="eat-image"></center>
+                        <center><img class="play_img" src="{{ url_for('static', filename='training.jpg') }}" alt="eat-image"></center>
                        </div>
                        <div class="carousel-item container-fluid">
-                        <center><img class="play_img" src="static/blog/play1.jpg" alt="eat-image"></center>
+                        <center><img class="play_img" src="{{ url_for('static', filename='play1.jpg') }}" alt="eat-image"></center>
                        </div>
                   
                   
@@ -148,26 +141,26 @@
           <table>
             <tr>
               <td>
-                <img class="timg" src="static/blog/t1.jpg">
+                <img class="timg" src="{{ url_for('static', filename='t1.jpg') }}">
               </td>
               <td class="b1">
-                <a href="nutrientdiet.html"><button type="button" class="btn btn-light">Click!</button></a>
+                <a href="/nutrientdiet.html"><button type="button" class="btn btn-light">Click!</button></a>
               </td>
             </tr>
             <tr>
               <td class="b1">
-                <a href="training.html"><button type="button" class="btn btn-light">Click!</button></a>
+                <a href="/training.html"><button type="button" class="btn btn-light">Click!</button></a>
               </td>
               <td >
-                <img class="timg"src="static/blog/t2.jpeg">
+                <img class="timg"src="{{ url_for('static', filename='t2.jpg') }}">
               </td>
             </tr>
             <tr>
               <td>
-                <img class="timg" src="static/blog/t3.jpeg">
+                <img class="timg" src="{{ url_for('static', filename='t3.jpeg') }}">
               </td>
               <td class="b1">
-                <a href="meet.html"><button type="button" class="btn btn-light">Click!</button></a>
+                <a href="/meet.html"><button type="button" class="btn btn-light">Click!</button></a>
               </td>
             </tr>
           </table>

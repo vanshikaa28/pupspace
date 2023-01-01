@@ -54,15 +54,13 @@
             <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fa-brands fa-google-play"></i><a href="/sign-up">Sign up</a></button>
             </div>
           <div class="col-lg-6">
-            <img class="doggie" src="iphone.png" alt="iphone-mockup">
+            <img class="doggie" src="{{ url_for('static', filename='iphone.png') }}" alt="iphone-mockup">
           </div>
         </div>
       </div>
         </section>
 
-
         <!--Features-->
-
         <section id="features">
           <div class="row">
             <div class="col-lg 4 feature_style">
@@ -91,12 +89,12 @@
             <div class="carousel-inner">
               <div class="carousel-item active container-fluid">
                 <h2 class="testimonials_h2">I no longer have to sniff other dogs to be my friends . I've found the sweetest Corgi on PupSpace. Woof.</h2>
-                <img class="dog_img" src="/dog-img.jg" alt="dog-image">
+                <img class="dog_img" src="{{ url_for('static', filename='dog-img.jpg') }}" alt="dog-image">
                 <em>Pebbles, New York</em>
               </div>
               <div class="carousel-item container-fluid">
                 <h2 class="testimonials_h2">My dog used to be so lonely, but with PupSpace help, they've found friends for my dog. I think.</h2>
-                  <img class="dog_img" src="lady-img.jpg" alt="lady-image">
+                  <img class="dog_img" src="{{ url_for('static', filename='lady-img.jpg') }}" alt="lady-image">
                   <em>Beverly, Illinois</em> 
               </div>
             </div>
@@ -112,10 +110,10 @@
         <!-- Press -->
 
         <section id="press">
-            <img class="press_img" src="/TechCrunch.png}" alt="tc-logo">
-            <img class="press_img" src="/tnw.png}" alt="tnw-logo">
-            <img class="press_img" src="bizinsider.png" alt="biz-insider-logo">
-            <img class="press_img" src="mashable.png" alt="mashable-logo">
+            <img class="press_img" src="{{ url_for('static', filename='TechCrunch.png') }}" alt="tc-logo">
+            <img class="press_img" src="{{ url_for('static', filename='tnw.png') }}" alt="tnw-logo">
+            <img class="press_img" src="{{ url_for('static', filename='bizinsider.png') }}" alt="biz-insider-logo">
+            <img class="press_img" src="{{ url_for('static', filename='mashable.png') }}" alt="mashable-logo">
 
   </section>
 
@@ -179,7 +177,7 @@
   <section id="final">
 
     <h3 class="h3_style">Find the True Friends for Your Dog's.</h3>
-    <button type="button" class="btn btn-dark btn-lg download-btn2"><i class="fa-brands fa-apple"></i></button>
+    <button type="button" class="btn btn-dark btn-lg download-btn2"><i class="fa-brands fa-apple"></i>Download</button>
     <button type="button" class="btn btn-light btn-lg download-btn2"><i class="fa-brands fa-google-play"></i>  Download</button>
 
   </section>
@@ -192,11 +190,8 @@
     <i class=" social_media-icons fa-brands fa-facebook"></i>
     <i class=" social_media-icons fa-brands fa-instagram"></i>
     <i class=" social_media-icons fa-solid fa-envelope"></i>
-
     <p>© Copyright PupSpace</p>
-
   </footer>
-
- 
+  
     </body>
 </html>
