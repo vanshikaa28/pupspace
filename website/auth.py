@@ -10,12 +10,12 @@ def login():
     if request.method == 'POST':
         email = request.form.get('email')
         password = request.form.get('password')
-
+        print(email,password)
         user = User.query.filter_by(email=email).first()
         if user:
             if check_password_hash(user.password, password):
                 flash('logged in successfully!', category='success')
-                return redirect(url_for('views.page1'))
+                return redirect(url_for('views.after_login'))
             else:
                 flash('Incorrect password, try again.', category='error')
         else:
