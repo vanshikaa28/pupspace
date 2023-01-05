@@ -12,9 +12,8 @@
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
          
          <!--For External Css File-->
-         <!--{% load static %} -->
  
-         <link rel="stylesheet" href="training.css">
+         <link rel="stylesheet" href="{{ url_for('static', filename='training.css') }}">
         
          <!--For attaching icons-->
         
@@ -41,7 +40,7 @@
                  and to go potty outside. And believe it or not, it's something you can do yourself as a beginner.<br><br>
 
                 At first, dog training can seem pretty overwhelming, especially if this is your first dog. The truth is that training your dog is a very 
-                big project.<img  class="pic" src="static/blog/train.png"> If you take it step by step, you will find the task to be far less daunting. Here is some information to help get you started:<br><br>
+                big project.<img class="pic" src="{{ url_for('static', filename='train.png') }}"> If you take it step by step, you will find the task to be far less daunting. Here is some information to help get you started:<br><br>
                 <ul>
                     <li><b>Start a Dog Obedience Program:</b> Learn how to set a basic foundation before you begin to train your dog.<br><br></li>
                     <li><b>Train Your Dog Using Games:</b> Training your dog should be fun! Everyone knows it's easier to learn when you are having a good time,
@@ -55,7 +54,7 @@
         <div>
             <h2>House Training and Crate Training</h2>
             <p>
-                <img class="pic2" src="static/blog/train2.jpg">
+                <img class="pic2" src="{{ url_for('static', filename='train2.jpg') }}">
                 Unless you plan to keep your dog outdoors—and few of us do because it's not recommended—you'll 
                 need to teach your dog where to eliminate. Therefore, house training (also called housebreaking or potty training) is one of the first things you need to work on with your dog. 
                 Crate training can be a very helpful part of the training process. <br>
@@ -78,7 +77,7 @@
         </div>
         <div>
             <h2>How To Socialize Dogs and Puppies</h2>
-            <p>Socialization means training your puppy or adult dog to accept new people, animals, and various places by exposing him to these things.<img  class="pic" src="static/blog/train3.jpg">
+            <p>Socialization means training your puppy or adult dog to accept new people, animals, and various places by exposing him to these things.<img class="pic" src="{{ url_for('static', filename='train3.jpg') }}">
             Socialized dogs are less likely to develop behavior problems and are generally more welcomed by others. 
             Socialization can also help prevent the development of fears and phobias.
 

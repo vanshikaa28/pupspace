@@ -1,0 +1,33 @@
+body {
+    background-color:  #ff4c68 ;
+    background-image: -webkit-linear-gradient(60deg, #debbc0 60%, #ff4c68 40%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+.navbar-brand{
+    font-size:2rem;
+    font-weight: bold;
+ }
+ .nav-item{
+    padding: 0px 18px;
+ }
+ .nav-link{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+ .food{
+   width: 400px;
+   height: 140px;
+ }
+ .food1{
+   width: 15%;
+   margin: 20px;
+  float:right;
+  margin-left: 30px;
+ }
+
+ #footer{
+    text-align: center;
+    padding: 8% 16%;
+ }
+ 

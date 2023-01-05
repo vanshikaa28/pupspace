@@ -12,10 +12,8 @@
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
          
          <!--For External Css File-->
-         <!--{% load static %} -->
  
-         <link rel="stylesheet" href="nutrient.css">
-        
+         <link rel="stylesheet" href="{{ url_for('static', filename='nutrient.css') }}">
          <!--For attaching icons-->
         
          <script src="https://kit.fontawesome.com/7bdefb1fa6.js" crossorigin="anonymous"></script>
@@ -38,7 +36,7 @@
             <div class="col-lg-6">
               <h1 class="heading">Dog Feeding Guides: <br>&nbsp; Diet & Nutrition Tips</h1>
           <div class="col-lg-6">
-            <img class="bone" src="/blog/bone.jpg" alt="bone">
+            <img class="bone" src="{{ url_for('static', filename='bone.jpg') }}" alt="bone">
           </div>
         </div>
       </div>
@@ -57,11 +55,11 @@
       </div>
 
       <div>
-        <a class="link" href="page1.html" target="_blank"><img class="photo" src="/blog/page1.jpg" align="left"></a>
-        <a class="link" href="page2.html" target="_blank"><img class="photo1" src="/blog/page2.jpg" align="center"></a>
-        <div class="text1"><a class="link" href="page1.html" target="_blank"> <br><b><i>Homemade Food for Dogs.!</i></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="link" href="/page1" target="_blank"><img class="photo" src="{{ url_for('static', filename='page1.jpg') }}" align="left"></a>
+        <a class="link" href="/page2" target="_blank"><img class="photo1" src="{{ url_for('static', filename='page2.jpg') }}" align="center"></a>
+        <div class="text1"><a class="link" href="/page1" target="_blank"> <br><b><i>Homemade Food for Dogs.!</i></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;
-          <a class="link" href="page2.html" target="_blank"> <b><i>How to Add Fiber to Your Dog Diet.!</i></b></a></div>
+          <a class="link" href="/page2" target="_blank"> <b><i>How to Add Fiber to Your Dog Diet.!</i></b></a></div>
       </div>
 
         <!-- Footer -->

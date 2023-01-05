@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--For bootstrap installation-->
+         <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+        
+        <!--Bootstrap Scripts using navigation bar-->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+        <!--For External Css File-->
+
+        <link rel="stylesheet" href="{{url_for('static', filename='page2.css')}}">
+       
+        <!--For attaching icons-->
+       
+        <script src="https://kit.fontawesome.com/7bdefb1fa6.js" crossorigin="anonymous"></script>
+       
+        <!--Google Fonts-->
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark ">
+                <!--<span class="navbar-brand mb-0 h1">Navbar</span>-->
+                <a class="navbar-brand" href=""><i class="fa-solid fa-paw"></i> PupSpace</a>
+            </nav>
+        </div>
+        <div>
+            <h1><b><i><center>How to Add Fiber to Your Dog's Diet</center></b></i></h1>
+            <p>
+                Fiber is a vital nutrient when it comes to dog nutrition and there are plenty of ways you can add fiber to your dog’s diet. Fiber helps to 
+                absorb water and provide bulk to stool, helping to keep your dog’s bowels regular and their stools formed and firm. It can also promote 
+                good gut health by keeping the intestinal oxygen levels unsuitable for bad bacteria, preventing their growth and colonization. Fiber only 
+                comes from plant based ingredients and it can be soluble or insoluble.
+                <br><br><img class="dog" src="{{ url_for('static', filename='doggy.png') }}">
+                Soluble fiber is able to absorb water and be broken down and utilized by the body whereas insoluble cannot be digested. If a dog is given 
+                too much soluble fiber, or if they are introduced to it too quickly, they may become flatulent and/or have diarrhea. Insoluble fiber, 
+                although being indigestible, can be beneficial in the fact that it helps regulate transit time in the gut. This means insoluble fiber 
+                can increase transit time during times of constipation and decrease it during times of diarrhea. However, too much insoluble fiber can 
+                hinder the absorption of other vital nutrients and can lead to weight loss, a poor coat, vomiting, and diarrhea. In commercial dog food,
+                fiber can be sourced from grains such as rice and corn but also from things such as soybeans, beet pulp, and peanut hulls.
+            </p>
+        </div>
+
+        <div>
+            <h2>The Healthiest and Best Ways to Add Fiber to Your Dog’s Diet</h2>
+            <p>
+                <br>
+                The easiest way to boost your dog’s fiber intake is to add a high fiber food to their meals. The most commonly reached for item is <b><i>pumpkin</b></i>. 
+                It’s readily available as canned pumpkin. Smaller dogs will only need about a tablespoon added to their meals while larger dogs may need up 
+                to a quarter cup. As with any diet change in dogs, it’s recommended to start slowly, so if you have a large or giant breed, start with a 
+                smaller amount of pumpkin and slowly work your way up to a quarter cup. 
+                <br><br><img class="dog1" src="{{ url_for('static', filename='doggy1.jpg') }}">
+                <b><i>Green beans</b> </i>are another whole food that can be a great fiber source. Raw green beans are less digestible but they can be steamed for easier 
+                digestion. Obviously make sure they are sufficiently cooled before giving to your dog. Alternatively, frozen green beans are also a great
+                option. Similar to pumpkin, smaller breed dogs may only need about a tablespoon (you can chop them up for easier measuring) while larger 
+                breed dogs can have a quarter cup.
+                <br><br>
+                <b><i>Sweet potatoes</b></i> are another fantastic option for naturally boosting your dog’s fiber. As with green beans, steamed is the best way to prepare 
+                them for your dog. Once cooked and cooled, they can be added to your dog’s food as small, cubed chunks or you can mash them. Again, depending
+                on the size of your dog, you can can add anywhere from one tablespoon to a quarter cup.
+                <br><br>
+                Over the counter <b><i>psyllium-based powdered</b> </i>fiber supplements can also be an option,<img class="dog2" src="{{ url_for('static', filename='doggy2.jpg') }}"> but this is more for short term use, such as when a dog
+                may be constipated. Adding fiber in this manner should be done cautiously to avoid adding too much too quickly and causing diarrhea. 
+                A small breed dog may tolerate about 1/2 tsp while a large or giant breed dog may tolerate up to 2 Tbl per day. Mix the powder with food 
+                and ensure that your dog is drinking plenty of water. Sugar-free formulations should be avoided to prevent potential exposure to xylitol, 
+                which is toxic to dogs. As always, consult with your veterinarian before adding supplementation to your dog's diet, especially if you are 
+                trying to address a problem.
+            </p>
+        </div>
+
+        <div>
+            <h2>What to Stay Away From</h2>
+            <p>There are things that you should avoid when looking to add fiber to your dog’s diet. If you’re going the puréed pumpkin route, ensure that 
+                you are purchasing canned pumpkin only and not canned pumpkin pie mix. This is because canned pumpkin pie mix will have added sugar and 
+                spices that may upset your dog’s stomach. 
+                <br> <img class="dog3" src="{{ url_for('static', filename='doggy3.jpg') }}">
+                Canned green beans should also be avoided when possible. This is because they will have a higher sodium content than fresh or frozen. 
+                If all you have available to you is canned, look for low sodium varieties.
+                <br>
+                Fiber is an essential nutrient for dogs but some dogs may require more of it in their diet than others. For more information about 
+                your dog’s dietary needs and how best to supplement their diet, speak to your veterinarian.</p>
+        </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <i class=" social_media-icons fa-brands fa-twitter"></i>
+        <i class=" social_media-icons fa-brands fa-facebook"></i>
+        <i class=" social_media-icons fa-brands fa-instagram"></i>
+        <i class=" social_media-icons fa-solid fa-envelope"></i>
+
+    <p>© Copyright PupSpace</p>
+
+    </footer>
+    </body>
+</html>
